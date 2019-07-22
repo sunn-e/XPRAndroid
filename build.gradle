@@ -1,0 +1,21 @@
+buildscript {
+	repositories {
+		jcenter()
+        mavenCentral()
+        google()
+    }
+	dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+
+allprojects {
+	version = '1.0.0-SNAPSHOT'
+
+	repositories {
+        jcenter()
+		maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
